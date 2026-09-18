@@ -1,0 +1,13 @@
+# dsh-tool-error-hints 自带激活补丁（作为 bundle 层被应用）。
+# `insert:` 把条目追加到 profile 插件树顶层。
+- insert:
+    - id: tool-error-hints
+      name: 'dsh-tool-error-hints'
+      config:
+        enabled: true
+        # 解析相对路径时依次尝试的根目录
+        roots:
+          - /nas/dsh
+        maxEntries: 24
+        # 同一路径本轮最多提示 2 次，防刷屏
+        maxHintsPerPath: 2

@@ -1,0 +1,1 @@
+# dsh-tool-error-hints
